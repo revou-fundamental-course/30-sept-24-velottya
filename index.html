@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Kalkulator Suhu</h1>
+        <form id="tempForm">
+            <div id="celsiusContainer">
+                <label for="celsius">Celsius (°C):</label>
+                <input type="number" id="celsius" placeholder="Masukkan suhu dalam °C">
+            </div>
+            <div id="fahrenheitContainer" style="display:none;">
+                <label for="fahrenheitInput">Fahrenheit (°F):</label>
+                <input type="number" id="fahrenheitInput" placeholder="Masukkan suhu dalam °F">
+            </div>
+            <button type="submit">Konversi</button>
+            <button type="button" id="resetButton">Reset</button>
+            <button type="button" id="reverseButton">Reverse</button>
+        </form>
+        <div id="result">
+            <p id="conversionResult"></p>
+            <p id="explanation"></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
